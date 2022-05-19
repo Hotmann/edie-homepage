@@ -1,0 +1,85 @@
+.footer {
+  background-color: var(--color-blue-dark);
+  padding: 4.6rem 12.1rem 2.4rem 12.1rem;
+  color: var(--color-white);
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 4.6rem 10.1rem 2.4rem 10.1rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 4.6rem 1.9rem 2.4rem 1.9rem;
+  }
+
+  @media only screen and (max-width: $bp-very-small) {
+    padding: 7.2rem 0 4.8rem 8.2rem;
+  }
+
+  &__form {
+    width: 366px;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 321px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 305px;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      margin-top: 4.2rem;
+      margin-left: 0.6rem;
+    }
+  }
+
+  &__copy {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+    color: var(--color-grey-light-1);
+    margin-top: 11.8rem;
+
+    @media only screen and (max-width: $bp-very-small) {
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      text-align: start;
+      margin-top: 20rem;
+      margin-right: 0.6rem;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    color: inherit;
+  }
+}
+
+.social {
+  margin-right: 5.3rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: $bp-very-small) {
+    margin: 12.8rem 0;
+  }
+
+  &__handles {
+    padding-top: 0.8rem;
+
+    @media only screen and (max-width: $bp-very-small) {
+      padding-top: 1.6rem;
+    }
+  }
+
+  &__handle:not(:last-child) {
+    margin-right: 1.1rem;
+
+    @media only screen and (max-width: $bp-very-small) {
+      margin-right: 2.2rem;
+    }
+  }
+}

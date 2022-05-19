@@ -1,0 +1,282 @@
+/// Email form
+
+.email {
+  &__box {
+  }
+
+  &__input {
+    width: 350px;
+    font-family: inherit;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    padding: 1.5rem 2.1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-grey-light-1);
+    color: var(--color-black-1);
+    transition: all 0.2s;
+
+    @media only screen and (max-width: $bp-very-large) {
+      width: 300px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 291px;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      font-size: 2.8rem;
+      line-height: 4.2rem;
+      padding: 3rem 0 2.2rem 3.8rem;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem var(--color-black-1, 0.2);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translate(-1px);
+      box-shadow: 0 0.5rem 1rem var(--color-black-1, 0.2);
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--color-grey-light-3);
+      font-weight: 500;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: inherit;
+    transform: translateY(-87px);
+
+    @media only screen and (max-width: $bp-very-large) {
+      transform: translateY(-70px);
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      font-size: 2rem;
+      line-height: 3rem;
+      transform: translateY(-68px);
+    }
+  }
+
+  &__input:hover ~ &__button {
+    transform: translateX(257px) translateY(-77.5px);
+    @media only screen and (max-width: $bp-very-large) {
+      transform: translateX(227px) translateY(-62px);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      transform: translateX(215px) translateY(-62px);
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      transform: translateX(217px) translateY(-62px);
+    }
+  }
+
+  &__input:active ~ &__button,
+  &__input:focus ~ &__button {
+    transform: translateX(254px) translateY(-73.4px);
+
+    @media only screen and (max-width: $bp-very-large) {
+      transform: translateX(225px) translateY(-59px);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      transform: translateX(213px) translateY(-59px);
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      transform: translateX(216px) translateY(-58px);
+    }
+  }
+
+  &__button {
+    &,
+    &:link,
+    &:visited {
+      background-color: var(--color-blue-light-1);
+      color: var(--color-grey-light-1);
+      padding: 1.1rem 2.7rem;
+      border-radius: 12px;
+      display: inline-block;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      border: none;
+      transform: translateX(255px) translateY(-74.5px);
+      cursor: pointer;
+      transition: all 0.2s;
+
+      @media only screen and (max-width: $bp-very-large) {
+        transform: translateX(223px) translateY(-60px);
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        transform: translateX(213px) translateY(-60px);
+      }
+
+      @media only screen and (max-width: $bp-very-small) {
+        font-size: 2.8rem;
+        line-height: 4.2rem;
+        padding: 2.2rem 4.08rem 1.4rem 4.2rem;
+        transform: translateX(216px) translateY(-58.5px);
+      }
+    }
+  }
+}
+
+// Card
+
+.card {
+  margin: 4.2rem 3rem 0 0;
+  padding: 4.6rem 3.4rem;
+
+  @media only screen and (min-width: $bp-largest) {
+    margin: 4.2rem 17.1rem 0 0;
+  }
+
+  @media only screen and (max-width: $bp-very-large) {
+    margin: 4.2rem 2.7rem 0 0;
+    padding: 4.6rem 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 4.2rem 1.9rem 0 0;
+    padding: 4.6rem 1.8rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 4.2rem 0.3rem 0 0;
+    padding: 4.6rem 1rem;
+  }
+
+  @media only screen and (max-width: $bp-very-small) {
+    margin: 0;
+    padding: 9.8rem 6.6rem 9.8rem 6.6rem;
+  }
+
+  &-blue,
+  &-green,
+  &-red {
+    color: var(--color-white);
+    padding: 7.2%;
+    font-size: 27.4px;
+    border-radius: 16px;
+  }
+
+  &-blue {
+    background-color: var(--color-blue-light-1);
+  }
+
+  &-green {
+    background-color: var(--color-green);
+  }
+
+  &-red {
+    background-color: var(--color-red);
+  }
+
+  &__button {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: var(--color-grey-dark-1);
+      margin-top: 3rem;
+      padding: 0.9rem 1.3rem;
+      border: none;
+      border-radius: 12px;
+
+      @media only screen and (max-width: $bp-very-large) {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 1.5rem;
+        padding: 1.1rem 1.6rem;
+      }
+
+      @media only screen and (max-width: $bp-very-small) {
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+        margin-top: 6rem;
+        padding: 1.8rem 2.6rem;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: var(--color-white);
+    box-shadow: 0 1rem 3rem var(--color-black-1, 0.1);
+    border-radius: 24px;
+
+    @media only screen and (max-width: $bp-medium) {
+      box-shadow: 0 1rem 2rem var(--color-black-1, 0.1);
+    }
+  }
+
+  &:hover .card__button {
+    background-color: var(--color-blue-light-1);
+    color: var(--color-white);
+  }
+}
+
+.col-1-of-3:not(:last-child) {
+  @media only screen and (max-width: $bp-very-small) {
+    margin: 6.4rem 0 8rem 0;
+  }
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    text-decoration: none;
+    color: var(--color-blue-light-1);
+    transform: translateY(-57.5px);
+    margin-left: 83.5%;
+    transition: all 0.2s;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+      margin-left: 82.1%;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      font-size: 3.6rem;
+      line-height: 5.4rem;
+      transform: translateY(35.64px);
+      margin-left: 0;
+    }
+  }
+
+  &:hover,
+  &::after {
+    transform: scaleX(1.1) scaleY(1.2) translateY(-57px) translateX(3px);
+    opacity: 0.8;
+    @media only screen and (max-width: $bp-very-small) {
+      transform: scaleX(1.1) scaleY(1.2) translateY(36px) translateX(3px);
+    }
+  }
+}

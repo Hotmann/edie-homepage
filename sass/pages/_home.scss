@@ -1,0 +1,198 @@
+.title,
+.footer--title {
+  font-family: 'Heebo';
+  font-weight: 800;
+  font-size: 3.6rem;
+  line-height: 5.3rem;
+}
+
+@media only screen and (max-width: $bp-very-small) {
+  .title {
+    font-size: 4.8rem;
+    line-height: 7rem;
+  }
+
+  .footer--title {
+    font-size: 7.2rem;
+    line-height: 10.8rem;
+  }
+}
+
+.section {
+  padding: 0 5.6rem 5rem 5.2rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 0 3.6rem 5rem 3.2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 3.8rem 0 4rem 0;
+  }
+
+  @media only screen and (max-width: $bp-very-small) {
+    padding: 0 2.8rem 0 2rem;
+  }
+
+  &-about {
+    @media only screen and (max-width: $bp-very-small) {
+      padding-right: 0.6rem;
+    }
+  }
+
+  &-offer {
+    margin: 10rem 11.4rem 0 11.3rem;
+    padding: 3rem 0;
+
+    @media only screen and (max-width: $bp-very-large) {
+      margin: 10rem 8.9rem 0 8.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 7rem 3.9rem 0 3.8rem;
+    }
+    @media only screen and (max-width: $bp-very-small) {
+      margin: 9.6rem 1rem 0 1rem;
+      padding: 0;
+    }
+  }
+
+  &-designs {
+    margin: 14rem 11.3rem 5.3rem 11.3rem;
+    padding: 2.4rem 0;
+
+    @media only screen and (max-width: $bp-very-large) {
+      margin: 14rem 8.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 11rem 3.8rem;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      margin: 16rem 0;
+      padding: 4rem 0;
+    }
+  }
+
+  &-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 11.3rem;
+    padding: 5.54rem 0;
+
+    @media only screen and (max-width: $bp-very-large) {
+      margin: 0 8.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 0 3.8rem;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 7.13rem 0 0 0;
+      margin: 0;
+    }
+  }
+
+  &-review {
+    margin: 14.1rem 14.4rem 20rem 11.3rem;
+    padding-right: 13.8rem;
+
+    @media only screen and (max-width: $bp-very-large) {
+      margin-left: 8.9rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 3.9rem;
+      padding-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-very-small) {
+      margin: 20.1rem 0;
+      padding: 0;
+    }
+  }
+}
+
+.desire {
+  width: 543px;
+  margin-left: 22.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-left: 14.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-left: 10.5rem;
+  }
+
+  @media only screen and (max-width: $bp-very-small) {
+    width: 272px;
+    margin-left: 6rem;
+  }
+}
+
+.story {
+  width: 366px;
+  margin-left: 22.5rem;
+  color: var(--color-grey-dark-1);
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-left: 14.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-left: 10.5rem;
+  }
+
+  @media only screen and (max-width: $bp-very-small) {
+    width: 275px;
+    margin-left: 6rem;
+  }
+
+  &__box {
+    @media only screen and (max-width: $bp-very-small) {
+      width: 227px;
+    }
+  }
+}
+
+.offer,
+.designs {
+  max-width: 376px; ///width
+
+  @media only screen and (max-width: $bp-very-small) {
+    width: 245px;
+    margin-bottom: 2.8rem;
+    margin-left: 6.8rem;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media only screen and (max-width: $bp-very-small) {
+    flex-direction: column;
+  }
+}
+
+.team {
+  max-width: 290px;
+
+  @media only screen and (max-width: $bp-very-large) {
+    max-width: 257px;
+  }
+  @media only screen and (max-width: $bp-very-small) {
+    max-width: 280px;
+  }
+}
+
+.review {
+  max-width: 937px;
+}
