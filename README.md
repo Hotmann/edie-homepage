@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://https://edie-homepage-hotmann.netlify.app/">
+    <a href="https://edie-homepage-hotmann.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -26,10 +26,11 @@
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
-- [Built With](#built-with)
+  - [Built With](#built-with)
 - [Features](#features)
-- [How to use](#how-to-use)
+- [How To Use](#how-to-use)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
